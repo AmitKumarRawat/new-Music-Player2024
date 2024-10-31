@@ -40,6 +40,7 @@ dependencies:
   audioplayers: ^6.1.0
   just_audio: ^0.9.41
   path_provider: ^2.1.4
+  shared_preferences: ^2.3.2
 
 dev_dependencies:
   flutter_test:
@@ -64,9 +65,24 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/theme.jpg
+    - assets/icon.png
+    - assets/img1.jpg
+    - assets/img2.jpg
+    - assets/img3.jpg
+    - assets/img4.png
+    - assets/img5.jpg
+    - assets/img6.jpg
+    - assets/img7.jpg
+    - assets/img8.jpg
+    - assets/img9.jpg
+    - assets/img10.jpg
+    - assets/img11.jpg
+    - assets/img12.jpg
+    - assets/img13.jpg
+    - assets/img14.jpg
+    - assets/iimg15.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

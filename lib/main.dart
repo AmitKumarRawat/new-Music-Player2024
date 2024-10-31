@@ -1,4 +1,3 @@
-
 import 'package:MusicOn/screens/SplashPage.dart';
 import 'package:flutter/material.dart';
 void main() {
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark
       ),
       themeMode: ThemeMode.dark,
-      home: const Splashpage(),
+      home:  Splashpage(),
     );
   }
 }
