@@ -43,6 +43,13 @@ class MyHomePageState extends State<MyHomePage> {
       fetchSongs(); // Fetch songs after permission is granted
     } else if (storageStatus == PermissionStatus.denied) {
       print('Denied permission');
+     final storageChecker =await Permission.manageExternalStorage.request();
+      if(storageChecker.isGranted){
+        print('granted');
+
+      }else{
+        openAppSettings();
+      }
     } else if (storageStatus == PermissionStatus.permanentlyDenied) {
       print('Permanently denied');
       openAppSettings();
@@ -50,7 +57,7 @@ class MyHomePageState extends State<MyHomePage> {
   }
 
   Future<void> fetchSongs() async {
-    final musicDir = Directory('/storage/emulated/0/Music');
+    final musicDir = Directory('/storage/emulated/0/Download');
 
     if (await musicDir.exists()) {
       print('Accessing music directory: ${musicDir.path}');
